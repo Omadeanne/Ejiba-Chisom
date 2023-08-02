@@ -20,51 +20,36 @@
 
   <body class="bg-gray-100">
     <!-- Navigation -->
-    <nav class="bg-blue-500 py-4 sticky top-0 z-10">
-      <div class="container mx-auto flex justify-between px-4">
-        <div class="text-white font-bold text-xl">C H I S O M</div>
-        <ul class="text-white md:flex space-x-4">
-          <li class="hover:text-gray-600">
-            <a href="#">Home</a>
+    <header id="home">
+      <nav class="fixed flex w-full bg-blue-500 z-10 px-8 py-4">
+        <div class="flex items-center gap-2">
+          <span class="flex flex-col text-white font-bold text-sm">CHISOM</span>
+        </div>
+        <!-- <img src="./img/favicon.png" class=" float-left mr-[20px] w-8 h-8 bg-blue-500 rounded-full sm:float-left"> -->
+        <ul class="ml-auto flex gap-6 font-sm text-white sm:text-xl ">
+          <li
+            class="transition-all duration-300 ease-linear hover:text-gray-100"
+          >
+            <a href="#home">Home</a>
           </li>
-          <li class="hover:text-gray-600">
+          <li
+            class="transition-all duration-300 ease-linear hover:text-gray-100"
+          >
             <a href="#about">About</a>
           </li>
-
-          <li class="hover:text-gray-600">
-            <a href="#myskills">Skills</a>
+          <li
+            class="transition-all duration-300 ease-linear hover:text-gray-100"
+          >
+            <a href="#projects">Projects</a>
           </li>
-
-          <li class="hover:text-gray-600">
+          <li
+            class="transition-all duration-300 ease-linear hover:text-gray-100"
+          >
             <a href="#contact">Contact</a>
           </li>
-
-          <!-- <li class="hover:text-gray-600">
-            <a href="#">Testimonials</a>
-          </li> -->
-
-          <li class="hover:text-gray-600">
-            <a href="#myportfolio">Portfolio</a>
-          </li>
-
-          <a href="https://github.com/Omadeanne" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-
-          <a
-            href="https://www.linkedin.com/in/sandra-chisom-ejiba"
-            target="_blank "
-          >
-            <i class="fa-brands fa-linkedin linkedin"></i
-          ></a>
-
-          <a href="https://twitter.com/EjibaChisom" target="_blank">
-            <i class="fa-brands fa-twitter twitter"></i
-          ></a>
         </ul>
-      </div>
-    </nav>
-
+      </nav>
+    </header>
     <!-- Hero Section -->
     <section class="py-20 bg-gray-100">
       <div class="container mx-auto text-center">
@@ -76,14 +61,14 @@
         <!-- <h1 class="text-4xl font-bold text-blue-500">Hi</h1> -->
         <!-- <h2 class="text-2xl text-gray-600">I'm Ejiba Sandra Chisom</h2> -->
         <p
-          class="text-4xl font-bold text-blue-500 transition-opacity duration-500 ease-in-out hover:opacity-40"
+          class="text-3xl font-bold text-blue-500 transition-opacity duration-500 ease-in-out hover:opacity-40"
         >
           Frontend Developer
         </p>
       </div>
       <!-- texts -->
       <div
-        class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg shadow-gray-700 absolute top-0 bottom-0 m-auto right-10 bg-gray-100 p-6 h-fit w-1/3"
+        class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg shadow-gray-700 absolute top-0 bottom-0 m-auto right-8 bg-gray-100 p-6 h-fit w-1/3"
       >
         <h2 class="text-2xl font-bold text-blue-500">Hi, I'm Chisom</h2>
         <p class="text-gray-400">
@@ -101,6 +86,31 @@
           href="/images/EJIBA SANDRA CHISOM SAMPLE CV HQ (2).pdf"
           >Download CV <i class="fa-solid fa-download"></i
         ></a>
+        <ul>
+          <li class="flex space-x-4">
+            <a
+              href="https://github.com/Omadeanne"
+              target="_blank"
+              class="text-blue-500"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sandra-chisom-ejiba"
+              target="_blank"
+              class="text-blue-500"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://twitter.com/EjibaChisom"
+              target="_blank"
+              class="text-blue-500"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -163,7 +173,7 @@
         <!-- top -->
         <div class="flex flex-col gap-3 items-center">
           <h1 class="text-blue-500 font-bold">Contact Me</h1>
-          <h1 class="text-3xl text-blue-500">Have Questions?</h1>
+          <h2 class="text-xl text-blue-500">Have Questions?</h2>
           <p class="w-1/2 text-center text-gray-400">
             Do you have an Ideas let us brainstorm and see what we can do
             together
@@ -197,19 +207,70 @@
     </div>
 
     <!-- Testimonial Section -->
-    <!-- <section class="py-20 bg-white">
-      <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-4">Testimonials</h2>
-        
+    <section id="Testimonials" class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4">
+          <h2 class=" font-bold text-center mb-8 text-blue-500">Client Testimonials</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Testimonial Card 1 -->
+              <div class="bg-gray-100 shadow-md rounded-lg p-6">
+                  <div class="flex items-center mb-4">
+                      <img class="w-12 h-12 rounded-full mr-4" src="/images/client1.jpeg" alt="Client 1">
+                      <div>
+                          <p class="font-semibold text-gray-800">Alex Bassey </p>
+                          <p class="text-gray-600">CEO, PAACO pcl</p>
+                      </div>
+                  </div>
+                  <p class="text-gray-700">"Working with Sandra was an absolute pleasure.
+                      She is an exceptionally talented frontend developer with an eye for detail.
+                      Her ability to turn our ideas into stunning visual designs and seamless user
+                      experiences was commendable. The project was completed on time, and the end result
+                      exceeded our expectations. We look forward to collaborating with
+                      her again in the future."</p>
+              </div>
+
+              <!-- Testimonial Card 2 -->
+              <div class="bg-gray-100 shadow-md rounded-lg p-6">
+                  <div class="flex items-center mb-4">
+                      <img class="w-12 h-12 rounded-full mr-4" src="/images/client2.jpeg" alt="Client 2">
+                      <div>
+                          <p class="font-semibold text-gray-800">Kylian Mpappe</p>
+                          <p class="text-gray-600">Manager, Baaze Hotels</p>
+                      </div>
+                  </div>
+                  <p class="text-gray-700">"I had the pleasure of collaborating with Sandra on a challenging
+                      web development project. Her expertise in frontend technologies and creative
+                      problem-solving skills were evident throughout the project.
+                      Her was highly responsive to our feedback and implemented changes promptly.
+                      The end result was a polished and user-friendly website that our customers love.
+                      I highly recommend Chisom for any frontend development project."</p>
+              </div>
+
+              <!-- Testimonial Card 3 -->
+              <div class="bg-gray-100 shadow-md rounded-lg p-6">
+                  <div class="flex items-center mb-4">
+                      <img class="w-12 h-12 rounded-full mr-4" src="/images/clients3.jpeg" alt="Client 3">
+                      <div>
+                          <p class="font-semibold text-gray-800">Simeon Onya</p>
+                          <p class="text-gray-600">CEO, Frontend Consulting</p>
+                      </div>
+                  </div>
+                  <p class="text-gray-700">"Sandra is an exceptional Frontend developer who brought our vision to
+                      life.
+                      She is a great communicator and collaborator, always open to discussing ideas and finding
+                      the best solutions. The attention to detail in her work is evident, and her
+                      went above and beyond to ensure that the website met our requirements.
+                      I highly recommend her for anyone looking for a talented and reliable frontend developer."</p>
+              </div>
+          </div>
       </div>
-    </section> -->
+  </section>
 
     <!-- my portfolio -->
 
-    <div id="myportfolio" class="container mx-auto">
+    <div id="projects" class="container mx-auto">
       <div class="flex flex-col gap-3 items-center">
-        <h1 class="text-blue-500 font-bold">My Portfolio</h1>
-        <h1 class="text-3xl">Works & Projects</h1>
+        <h1 class="text-blue-500 font-bold">My Projects</h1>
+        <!-- <h1 class="text-3xl">Works & Projects</h1> -->
         <p class="w-1/2 text-center text-gray-400">
           I create responsive and user friendly website designs for brand
           optimization
